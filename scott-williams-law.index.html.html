@@ -17,6 +17,8 @@
             --text-light: #718096;
             --white: #ffffff;
             --success: #48bb78;
+            --telegram: #0088cc;
+            --phone: #25D366;
         }
         
         * {
@@ -100,8 +102,8 @@
             color: var(--navy);
         }
         
-        .whatsapp-btn {
-            background: #25D366;
+        .telegram-btn {
+            background: var(--telegram);
             color: var(--white) !important;
             padding: 0.5rem 1.25rem;
             border-radius: 20px;
@@ -111,12 +113,12 @@
             gap: 0.5rem;
         }
         
-        .whatsapp-btn::after {
+        .telegram-btn::after {
             display: none !important;
         }
         
-        .whatsapp-btn:hover {
-            background: #128C7E;
+        .telegram-btn:hover {
+            background: #006699;
             transform: translateY(-1px);
         }
         
@@ -237,8 +239,8 @@
             box-shadow: 0 10px 30px rgba(30, 58, 95, 0.2);
         }
         
-        .btn-whatsapp {
-            background: #25D366;
+        .btn-telegram {
+            background: var(--telegram);
             color: var(--white);
             padding: 1rem 2.5rem;
             border: none;
@@ -253,7 +255,29 @@
             gap: 0.5rem;
         }
         
-        .btn-whatsapp:hover {
+        .btn-telegram:hover {
+            background: #006699;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(0, 136, 204, 0.3);
+        }
+        
+        .btn-phone {
+            background: var(--phone);
+            color: var(--white);
+            padding: 1rem 2.5rem;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .btn-phone:hover {
             background: #128C7E;
             transform: translateY(-2px);
             box-shadow: 0 10px 30px rgba(37, 211, 102, 0.3);
@@ -772,9 +796,9 @@
         
         .contact-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 3rem;
-            max-width: 1000px;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
             margin: 0 auto;
             text-align: center;
         }
@@ -798,6 +822,7 @@
         .contact-item p {
             color: var(--text-light);
             margin-bottom: 1rem;
+            font-size: 0.9rem;
         }
         
         .contact-item a {
@@ -924,10 +949,6 @@
             .nav-links {
                 gap: 1.5rem;
             }
-            
-            .nav-links li:not(:last-child) {
-                display: none;
-            }
         }
         
         @media (max-width: 640px) {
@@ -963,7 +984,7 @@
                 justify-content: center;
             }
             
-            .btn-primary, .btn-whatsapp, .btn-secondary {
+            .btn-primary, .btn-telegram, .btn-phone, .btn-secondary {
                 width: 100%;
                 justify-content: center;
             }
@@ -979,8 +1000,8 @@
             <li><a href="#about">Why Choose Us</a></li>
             <li><a href="#consultation">Consultation</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li><a href="https://wa.me/14642408185" class="whatsapp-btn" target="_blank">
-                <span>??</span> WhatsApp
+            <li><a href="https://t.me/scottwilliamslaw" class="telegram-btn" target="_blank">
+                <span>✈️</span> Telegram
             </a></li>
         </ul>
     </nav>
@@ -999,8 +1020,11 @@
                 </p>
                 <div class="cta-group">
                     <a href="#consultation" class="btn-primary">Schedule Consultation</a>
-                    <a href="https://wa.me/14642408185" class="btn-whatsapp" target="_blank">
-                        <span>??</span> WhatsApp +1 (464) 240-8185
+                    <a href="tel:+12029921118" class="btn-phone">
+                        <span>📞</span> Call +1 (202) 992-1118
+                    </a>
+                    <a href="https://t.me/scottwilliamslaw" class="btn-telegram" target="_blank">
+                        <span>✈️</span> Telegram
                     </a>
                 </div>
             </div>
@@ -1023,17 +1047,17 @@
         
         <div class="features-grid">
             <div class="feature">
-                <h3>?? A Seasoned Perspective</h3>
-                <p>With three decades in the Texas courts, I provide a realistic outlook on your case from day one�no false promises, just strategic advocacy.</p>
+                <h3>⚖️ A Seasoned Perspective</h3>
+                <p>With three decades in the Texas courts, I provide a realistic outlook on your case from day one—no false promises, just strategic advocacy.</p>
             </div>
             
             <div class="feature">
-                <h3>?? Tailored Solutions</h3>
+                <h3>🎯 Tailored Solutions</h3>
                 <p>Every family and every dispute is unique. We listen first, then build a strategy that fits your specific needs and goals.</p>
             </div>
             
             <div class="feature">
-                <h3>?? Steadfast Support</h3>
+                <h3>🤝 Steadfast Support</h3>
                 <p>We pride ourselves on being accessible and transparent, ensuring you are informed and empowered at every stage of the legal process.</p>
             </div>
         </div>
@@ -1042,7 +1066,7 @@
     <!-- Quote Section -->
     <section class="quote-section">
         <p class="quote-text">"My practice is built on the belief that every client deserves a fierce advocate and a compassionate listener. I am here to handle the legal complexities so you can focus on moving forward."</p>
-        <p class="quote-author">� Scott Williams, Esq.</p>
+        <p class="quote-author">— Scott Williams, Esq.</p>
     </section>
 
     <!-- Practice Areas -->
@@ -1054,25 +1078,25 @@
         
         <div class="areas-grid">
             <div class="area-card">
-                <div class="area-icon">???????????</div>
+                <div class="area-icon">👨‍👩‍👧‍👦</div>
                 <h3>Family Law</h3>
                 <p>Navigating child custody, support agreements, and marital arrangements with a focus on your family's long-term well-being.</p>
             </div>
             
             <div class="area-card">
-                <div class="area-icon">??</div>
+                <div class="area-icon">💔</div>
                 <h3>Divorce</h3>
                 <p>Strategic counsel for both contested and uncontested divorces, ensuring equitable asset division and protection of parental rights.</p>
             </div>
             
             <div class="area-card">
-                <div class="area-icon">??</div>
+                <div class="area-icon">📜</div>
                 <h3>Inheritance & Probate</h3>
                 <p>Securing family legacies and navigating the probate process with clarity, respect, and meticulous attention to detail.</p>
             </div>
             
             <div class="area-card">
-                <div class="area-icon">???</div>
+                <div class="area-icon">🛡️</div>
                 <h3>Civil Defense</h3>
                 <p>Defending the interests of individuals and private entities in complex civil disputes with seasoned tactical expertise.</p>
             </div>
@@ -1112,21 +1136,28 @@
         
         <div class="contact-grid">
             <div class="contact-item">
-                <div class="contact-icon">??</div>
-                <h3>WhatsApp</h3>
-                <p>Fast, secure messaging for quick questions</p>
-                <a href="https://wa.me/14642408185" target="_blank">+1 (464) 240-8185</a>
+                <div class="contact-icon">📞</div>
+                <h3>Direct Line</h3>
+                <p>Call for immediate assistance</p>
+                <a href="tel:+12029921118">+1 (202) 992-1118</a>
             </div>
             
             <div class="contact-item">
-                <div class="contact-icon">??</div>
+                <div class="contact-icon">✉️</div>
                 <h3>Email</h3>
                 <p>Send detailed inquiries anytime</p>
                 <a href="mailto:barristerscottwilliams@proton.me">barristerscottwilliams@proton.me</a>
             </div>
             
             <div class="contact-item">
-                <div class="contact-icon">??</div>
+                <div class="contact-icon">✈️</div>
+                <h3>Telegram</h3>
+                <p>Fast, secure messaging</p>
+                <a href="https://t.me/scottwilliamslaw" target="_blank">@scottwilliamslaw</a>
+            </div>
+            
+            <div class="contact-item">
+                <div class="contact-icon">📍</div>
                 <h3>Office</h3>
                 <p>Houston, Texas</p>
                 <a href="#consultation">Schedule Visit</a>
@@ -1141,9 +1172,10 @@
                 <div class="logo">Law Office of Scott Williams<span>, Esq.</span></div>
                 <p>Providing compassionate legal advocacy for Houston families for over three decades. Your trusted partner in navigating life's most challenging legal transitions.</p>
                 <div class="footer-contact">
-                    <a href="https://wa.me/14642408185" target="_blank">?? WhatsApp: +1 (464) 240-8185</a>
-                    <a href="mailto:barristerscottwilliams@proton.me">?? barristerscottwilliams@proton.me</a>
-                    <a href="#">?? Houston, Texas</a>
+                    <a href="tel:+12029921118">📞 +1 (202) 992-1118</a>
+                    <a href="mailto:barristerscottwilliams@proton.me">✉️ barristerscottwilliams@proton.me</a>
+                    <a href="https://t.me/scottwilliamslaw" target="_blank">✈️ Telegram: @scottwilliamslaw</a>
+                    <a href="#">📍 Houston, Texas</a>
                 </div>
             </div>
             
@@ -1163,7 +1195,7 @@
                     <li><a href="#consultation">Schedule Consultation</a></li>
                     <li><a href="#about">Why Choose Us</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <li><a href="https://wa.me/14642408185">WhatsApp</a></li>
+                    <li><a href="https://t.me/scottwilliamslaw" target="_blank">Telegram</a></li>
                 </ul>
             </div>
             
@@ -1193,38 +1225,38 @@
                     id: 'who',
                     question: "Let's start simple: Are you reaching out for yourself, or for someone you care about?",
                     options: [
-                        { value: 'myself', label: 'For myself', icon: '??', subtext: 'I need legal assistance personally' },
-                        { value: 'someone', label: 'For someone I care about', icon: '??', subtext: 'A family member or loved one needs help' },
-                        { value: 'business', label: 'For my business', icon: '??', subtext: 'Legal matters affecting my company' }
+                        { value: 'myself', label: 'For myself', icon: '🙋', subtext: 'I need legal assistance personally' },
+                        { value: 'someone', label: 'For someone I care about', icon: '💙', subtext: 'A family member or loved one needs help' },
+                        { value: 'business', label: 'For my business', icon: '🏢', subtext: 'Legal matters affecting my company' }
                     ]
                 },
                 {
                     id: 'situation',
                     question: "What brings you here today?",
                     options: [
-                        { value: 'divorce', label: 'Considering or going through divorce', icon: '??', subtext: 'Contested, uncontested, or exploring options' },
-                        { value: 'custody', label: 'Child custody or support matters', icon: '????????', subtext: 'Protecting parental rights and children\'s wellbeing' },
-                        { value: 'estate', label: 'Estate planning or probate', icon: '??', subtext: 'Wills, trusts, or inheritance matters' },
-                        { value: 'civil', label: 'Civil dispute or defense', icon: '??', subtext: 'Business or personal litigation matters' },
-                        { value: 'other', label: 'Something else', icon: '??', subtext: 'Let\'s discuss your unique situation' }
+                        { value: 'divorce', label: 'Considering or going through divorce', icon: '💔', subtext: 'Contested, uncontested, or exploring options' },
+                        { value: 'custody', label: 'Child custody or support matters', icon: '👨‍👩‍👧', subtext: 'Protecting parental rights and children\'s wellbeing' },
+                        { value: 'estate', label: 'Estate planning or probate', icon: '📋', subtext: 'Wills, trusts, or inheritance matters' },
+                        { value: 'civil', label: 'Civil dispute or defense', icon: '⚖️', subtext: 'Business or personal litigation matters' },
+                        { value: 'other', label: 'Something else', icon: '🤝', subtext: 'Let\'s discuss your unique situation' }
                     ]
                 },
                 {
                     id: 'urgency',
                     question: "How urgent is your situation?",
                     options: [
-                        { value: 'immediate', label: 'Immediate action needed', icon: '??', subtext: 'Court dates, deadlines, or emergencies within days' },
-                        { value: 'soon', label: 'Within the next few weeks', icon: '??', subtext: 'Important decisions approaching' },
-                        { value: 'planning', label: 'Planning ahead', icon: '??', subtext: 'Seeking guidance for future peace of mind' }
+                        { value: 'immediate', label: 'Immediate action needed', icon: '🔴', subtext: 'Court dates, deadlines, or emergencies within days' },
+                        { value: 'soon', label: 'Within the next few weeks', icon: '🟡', subtext: 'Important decisions approaching' },
+                        { value: 'planning', label: 'Planning ahead', icon: '🟢', subtext: 'Seeking guidance for future peace of mind' }
                     ]
                 },
                 {
                     id: 'contact',
                     question: "How would you prefer to connect?",
                     options: [
-                        { value: 'phone', label: 'Phone call', icon: '??', subtext: 'Direct conversation (15-20 minutes)' },
-                        { value: 'video', label: 'Video consultation', icon: '??', subtext: 'Virtual meeting from your location' },
-                        { value: 'office', label: 'In-office meeting', icon: '???', subtext: 'Face-to-face at my Houston office' }
+                        { value: 'phone', label: 'Phone call', icon: '📞', subtext: 'Direct conversation (15-20 minutes)' },
+                        { value: 'video', label: 'Video consultation', icon: '💻', subtext: 'Virtual meeting from your location' },
+                        { value: 'office', label: 'In-office meeting', icon: '🏛️', subtext: 'Face-to-face at my Houston office' }
                     ]
                 },
                 {
@@ -1381,11 +1413,11 @@
             return `
                 <div class="navigation-btns">
                     <button class="nav-btn" onclick="prevStep()" ${intakeData.currentStep === 0 ? 'disabled' : ''}>
-                        ? Back
+                        ← Back
                     </button>
                     ${!isLastStep ? `
                         <button class="nav-btn next" onclick="nextStep()" ${!intakeData.answers[intakeData.questions[intakeData.currentStep].id] ? 'disabled' : ''}>
-                            Continue ?
+                            Continue →
                         </button>
                     ` : `
                         <button class="nav-btn next" onclick="submitIntake()" ${!hasSelection ? 'disabled' : ''}>
@@ -1434,7 +1466,7 @@
             
             container.innerHTML = `
                 <div class="question-container" style="text-align: center;">
-                    <div class="confirmation-animation">?</div>
+                    <div class="confirmation-animation">✅</div>
                     <h3 class="question" style="color: var(--navy);">Thank you, your consultation is scheduled</h3>
                     <p style="color: var(--text-light); margin-bottom: 2rem;">We've received your request and will send a confirmation to your preferred contact method.</p>
                     
@@ -1468,11 +1500,14 @@
                     </div>
                     
                     <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 1.5rem;">
-                        <a href="https://wa.me/14642408185" class="btn-whatsapp" target="_blank">
-                            <span>??</span> Message on WhatsApp
+                        <a href="tel:+12029921118" class="btn-phone">
+                            <span>📞</span> Call Now
+                        </a>
+                        <a href="https://t.me/scottwilliamslaw" class="btn-telegram" target="_blank">
+                            <span>✈️</span> Telegram
                         </a>
                         <a href="mailto:barristerscottwilliams@proton.me" class="btn-secondary">
-                            <span>??</span> Send Email
+                            <span>✉️</span> Send Email
                         </a>
                     </div>
                 </div>
